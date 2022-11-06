@@ -18,7 +18,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.listen(4444, () => console.log('api running'))
+app.listen(PORT, () => console.log('api running'))
 
 app.get('/', async (req, res) => {
     const Ratings = await MLOutputAVG.find().toArray()
