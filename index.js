@@ -6,7 +6,6 @@ import {MongoClient} from 'mongodb'
 const URI = process.env.MONGO_URI
 const client = new MongoClient(URI)
 const database = client.db('Database')
-const games = database.collection('games')
 const MLOutputAVG = database.collection('MLOutputAVG')
 
 const PORT = process.env.PORT
